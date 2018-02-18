@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/vegetarian"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:onClick="showVegetarianDetails"
+        android:padding="@dimen/padding_regular"
+        android:src="@drawable/vegetarian" />
+
+    <TextView
+        android:id="@+id/textVeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/vegetarian"
+        android:padding="@dimen/padding_wide"
+        android:text="@string/vegpizza"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textVeg"
+        android:layout_toRightOf="@+id/vegetarian"
+        android:padding="@dimen/padding_regular"
+        android:text="Price: Rp 45.000,00"
+        android:textSize="14dp"
+        android:layout_marginTop="0sp"
+        android:layout_marginLeft="30dp"/>
+
+    <ImageView
+        android:id="@+id/meat"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:onClick="showMeatDetails"
+        android:padding="@dimen/padding_regular"
+        android:src="@drawable/meat"
+        android:layout_below="@id/vegetarian"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_wide"
+        android:layout_toRightOf="@id/meat"
+        android:text="@string/meatpizza"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_below="@id/vegetarian"
+        android:id="@+id/textMeat" />
+
+    <TextView
+        android:id="@+id/pricemeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textMeat"
+        android:layout_toRightOf="@+id/meat"
+        android:padding="@dimen/padding_regular"
+        android:text="Price: Rp 50.000,00"
+        android:textSize="14dp"
+        android:layout_marginTop="0sp"
+        android:layout_marginLeft="30dp"/>
+
+    <ImageView
+        android:id="@+id/mushroom"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:onClick="showMushroomDetails"
+        android:padding="@dimen/padding_regular"
+        android:src="@drawable/mushroom"
+        android:layout_below="@id/meat"/>
+
+    <TextView
+        android:id="@+id/mushroompizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_wide"
+        android:layout_toRightOf="@id/mushroom"
+        android:layout_below="@id/pricemeat"
+        android:text="@string/mushroom_pizza"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mushroompizza"
+        android:layout_toRightOf="@+id/mushroom"
+        android:padding="@dimen/padding_regular"
+        android:text="Price: Rp 40.000,00"
+        android:textSize="14dp"
+        android:layout_marginTop="0sp"
+        android:layout_marginLeft="30dp"/>
+</RelativeLayout>
